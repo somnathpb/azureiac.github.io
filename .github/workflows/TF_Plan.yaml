@@ -27,3 +27,8 @@ jobs:
         id: plan
         if: github.event_name == 'push'
         run: terraform plan -no-color
+
+      - name: Terraform Destroy
+        id: destroy
+        if: github.event_name == 'push'
+        run: terraform destroy
