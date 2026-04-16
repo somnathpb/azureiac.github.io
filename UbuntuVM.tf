@@ -1,7 +1,4 @@
-resource "azurerm_resource_group" "demo" {
-  name                      = "example-resources"
-  location                  = "West Europe"
-}
+
 resource "azurerm_virtual_network" "example" {
   name                      = "example-network"
   address_space             = ["10.0.0.0/16"]
